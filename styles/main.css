@@ -817,6 +817,8 @@ body {
 }
 .post-detail .post .post-content pre {
   margin-bottom: 24px;
+  background-color: #000000;
+  color: #fffdfd;
 }
 .post-detail .post .post-content pre code {
   padding: 1em;
@@ -824,6 +826,20 @@ body {
   font-size: 16px;
   font-family: 'Source Code Pro', Consolas, Menlo, Monaco, 'Courier New', monospace;
   line-height: 1.375;
+}
+.post-detail .post .post-content pre::-webkit-scrollbar {
+  width: 10px;
+  height: 1px;
+}
+.post-detail .post .post-content pre::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #535353;
+}
+.post-detail .post .post-content pre::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background: #ededed;
 }
 .post-detail .post .post-content blockquote {
   margin-bottom: 16px;
@@ -910,7 +926,7 @@ body {
   border-radius: 50%;
   background-position: center center;
   background-origin: content-box;
-  background-size: cover;
+  background-size: 150%;
   background-repeat: no-repeat;
   box-shadow: 0 0 30px rgba(200, 200, 200, 0.25);
 }

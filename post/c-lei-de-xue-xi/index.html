@@ -5,7 +5,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    关于 | Web云空
+    C# 类的学习 | Web云空
 </title>
 <link rel="shortcut icon" href="http://qiyunkong.github.io/favicon.ico?v=1608180161131">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
@@ -99,26 +99,155 @@
                 <div id="content" class="main-container-left">
                     <article class="post i-card">
                         <h2 class="post-title">
-                            关于
+                            C# 类的学习
                         </h2>
                         <div class="post-info">
-                            <time class="post-time">2019-01-25</time>
+                            <time class="post-time">2020-12-17</time>
                             
                         </div>
                         
                                 <div class="post-content">
-                                    <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
+                                    <p>✍️   C# 是一个现代的、通用的、面向对象的编程语言，它是由微软（Microsoft）开发的，由 Ecma 和 ISO 核准认可的。</p>
+<!-- more -->
+<h2 id="定义一个类">定义一个类</h2>
+<pre><code class="language-c#">
+//定义一个人员类
+class Person {
+ 	//编写类的成员
+}
+</code></pre>
+<h3 id="类的成员和修饰词">类的成员和修饰词</h3>
+<blockquote>
+<p>类的成员有:字段，属性，方法，构造，索引器，</p>
+<p>类的修饰有:公有，私有（保护），抽象</p>
 </blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
+<h4 id="类的成员-字段">类的成员-字段</h4>
+<pre><code class="language-c#">
+//定义一个人员类
+class Person {
+    //字段
+    private  string name;
+    private int age;
+    private string sex;
+    private static bool isMorf;
+}
+</code></pre>
+<h4 id="类的成员-属性">类的成员-属性</h4>
+<pre><code class="language-c#">
+//定义一个人员类
+class Person {
+    //字段(上述代码)
+     
+    //Name
+    public string Name {
+        get { return name; }
+        set { name = value; }
+    }
+
+    //Age
+    public int Age {
+        set { age = value; }
+        private get { return age; }
+
+    }
+
+    //性别
+    public string Sex{
+        set { sex = value; }
+        get { return sex; }
+    }       
+
+    //静态属性不能使用非静态字段
+    public static bool Morf {
+        get { return isMorf; }
+        set { isMorf = value; }
+    }
+    
+    
+}
+</code></pre>
+<h4 id="类的成员-方法">类的成员-方法</h4>
+<pre><code class="language-c#">
+class Person {
+    //方法
+    public void Print() {
+        Console.WriteLine(&quot;none params&quot;);
+    }
+}
+</code></pre>
+<h4 id="类的成员-索引器">类的成员-索引器</h4>
+<pre><code class="language-c#">
+class Person {
+    public int this[int index]
+    {
+        get { return intarray[index]; }
+        set { intarray[index] = value; }
+    }
+}
+</code></pre>
+<h4 id="类的成员-构造">类的成员-构造</h4>
+<pre><code class="language-c#">
+class Person {
+ 	//实例构造方法
+    public Person()
+    {
+        Console.WriteLine(&quot;实例构造函数调用了&quot;);
+    }
+    //静态构造方法
+    static Person()
+    {
+        Console.WriteLine(&quot;静态构造函数调用了&quot;);
+    }
+    //析构构造函数
+    ~Person()
+    {
+        Console.WriteLine(&quot;析构构造函数被调用&quot;);
+    }
+
+}
+</code></pre>
+<h2 id="类的使用">类的使用</h2>
+<pre><code class="language-c#">static void Main(string[] args)
+{
+    //构造函数 实例化对象
+    Person p = new Person();
+    
+    //属性赋值
+    p.Name = &quot;Tony&quot;;
+    p.Age = 12;
+    p.Sex = &quot;f&quot;;
+
+    //静态的方法只能类调用
+    Person.Morf = false;
+
+    //调用方法 
+    p.Print();
+    
+    //索引器使用
+    p[0] = 12;
+    p[1] = 13;
+    p[2] = 14;
+    Console.WriteLine(&quot; p[0]=&quot; +  p[0]);
+    Console.WriteLine(&quot; p[1]=&quot; +  p[1]);
+    Console.WriteLine(&quot; p[2]=&quot; +  p[2]);
+
+
+}
+</code></pre>
 
                                 </div>
                     </article>
                     <!--  -->
                     
+                        <div class="next-post">
+                            <div class="next">下一篇</div>
+                            <a href="http://qiyunkong.github.io/post/c-ji-ben-yu-fa/">
+                                <h3 class="post-title">
+                                    C# 基本语法
+                                </h3>
+                            </a>
+                        </div>
+                        
                             <div id="disqus_thread"></div>
                             <div id="gitalk-container"></div>
                 </div>
@@ -135,10 +264,20 @@
             <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99">🏠 关于本站</a></li>
-<li><a href="#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81">👨‍💻 博主是谁</a></li>
-<li><a href="#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD">⛹ 兴趣爱好</a></li>
-<li><a href="#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80">📬 联系我呀</a></li>
+<li><a href="#%E5%AE%9A%E4%B9%89%E4%B8%80%E4%B8%AA%E7%B1%BB">定义一个类</a>
+<ul>
+<li><a href="#%E7%B1%BB%E7%9A%84%E6%88%90%E5%91%98%E5%92%8C%E4%BF%AE%E9%A5%B0%E8%AF%8D">类的成员和修饰词</a>
+<ul>
+<li><a href="#%E7%B1%BB%E7%9A%84%E6%88%90%E5%91%98-%E5%AD%97%E6%AE%B5">类的成员-字段</a></li>
+<li><a href="#%E7%B1%BB%E7%9A%84%E6%88%90%E5%91%98-%E5%B1%9E%E6%80%A7">类的成员-属性</a></li>
+<li><a href="#%E7%B1%BB%E7%9A%84%E6%88%90%E5%91%98-%E6%96%B9%E6%B3%95">类的成员-方法</a></li>
+<li><a href="#%E7%B1%BB%E7%9A%84%E6%88%90%E5%91%98-%E7%B4%A2%E5%BC%95%E5%99%A8">类的成员-索引器</a></li>
+<li><a href="#%E7%B1%BB%E7%9A%84%E6%88%90%E5%91%98-%E6%9E%84%E9%80%A0">类的成员-构造</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E7%B1%BB%E7%9A%84%E4%BD%BF%E7%94%A8">类的使用</a></li>
 </ul>
 </li>
 </ul>

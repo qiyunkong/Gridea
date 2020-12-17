@@ -7,7 +7,7 @@
 <title>
     C# 第一个程序 | Web云空
 </title>
-<link rel="shortcut icon" href="http://qiyunkong.github.io/favicon.ico?v=1608173790069">
+<link rel="shortcut icon" href="http://qiyunkong.github.io/favicon.ico?v=1608180161131">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -28,7 +28,7 @@
     <div class="nav">
         <div class="logo">
             <a href="http://qiyunkong.github.io">
-                <img class="avatar" src="http://qiyunkong.github.io/images/avatar.png?v=1608173790069" alt="">
+                <img class="avatar" src="http://qiyunkong.github.io/images/avatar.png?v=1608180161131" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -105,23 +105,22 @@
                             <time class="post-time">2020-12-17</time>
                             
                                 <a href="http://qiyunkong.github.io/tag/CSharp/" class="post-tag i-tag
-                            i-tag-other_4">
+                            i-tag-banana">
                             #C#
                         </a>
                                 
                         </div>
                         
                                 <div class="post-content">
-                                    <!-- more -->
-<p>✍️   C# 是一个现代的、通用的、面向对象的编程语言，它是由微软（Microsoft）开发的，由 Ecma 和 ISO 核准认可的。</p>
+                                    <p>✍️   C# 是一个现代的、通用的、面向对象的编程语言，它是由微软（Microsoft）开发的，由 Ecma 和 ISO 核准认可的。</p>
 <!-- more -->
-<pre><code class="language-C#">//引入命名空间
+<pre><code class="language-C#">
+//引入命名空间
 using System; 
-
 //命名空间
 namespace ConsoleApp1
 {
-    //类
+    //命名类
     class Program
     {
         public static void Method() {
@@ -137,6 +136,12 @@ namespace ConsoleApp1
     }
 }
 </code></pre>
+<p>小结</p>
+<ul>
+<li>调试 F2</li>
+<li>Main方法</li>
+</ul>
+<h2 id="特点">特点</h2>
 
                                 </div>
                     </article>
@@ -159,32 +164,46 @@ namespace ConsoleApp1
                 <!-- right -->
                 <div id="sidebar" class="main-container-right">
                     
-                                <!-- id-card -->
-                                
-    <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(http://qiyunkong.github.io/images/avatar.png?v=1608173790069)">
-        </div>
-        <h1 class="id_card-title">
-            Web云空
-        </h1>
-        <h2 class="id_card-description">
-            IT，生活，笔记，开发的浏览平台
-        </h2>
-        <!--  -->
-        <div class="id_card-sns">
-            <!-- github -->
-            
-                    <!-- twitter -->
-                    
-                            <!-- weibo -->
-                            
-                                    <!-- facebook -->
-                                    
+                        <!-- toc -->
+                        
+    <div class="toc-card i-card ">
+        <div class="toc-title i-card-title">目录</div>
+        <div class="toc-content">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E7%89%B9%E7%82%B9">特点</a></li>
+</ul>
+</li>
+</ul>
 
         </div>
+        <script>
+            function locateCatelogList() {
+                /*获取文章目录集合,可通过:header过滤器*/
+                var alis = $('.post-content :header');
+                /*获取侧边栏目录列表集合**/
+                var sidebar_alis = $('.markdownIt-TOC a');
+                /*获取滚动条到顶部的距离*/
+                var scroll_height = $(window).scrollTop();
+                for (var i = 0; i < alis.length; i++) {
+                    /*获取锚点集合中的元素分别到顶点的距离*/
+                    var a_height = $(alis[i]).offset().top;
+                    if (a_height < scroll_height) {
+                        /*高亮显示*/
+                        sidebar_alis.removeClass('on');
+                        $(sidebar_alis[i]).addClass('on');
+                    }
+                }
+            }
+            $(function() {
+                /*绑定滚动事件 */
+                $(window).bind('scroll', locateCatelogList);
+            });
+        </script>
     </div>
     
-                                    
+                            
 
                 </div>
 

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://qiyunkong.github.io</id>
     <title>Web云空</title>
-    <updated>2020-12-17T02:56:38.718Z</updated>
+    <updated>2020-12-17T04:42:49.083Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://qiyunkong.github.io"/>
     <link rel="self" href="http://qiyunkong.github.io/atom.xml"/>
@@ -11,21 +11,392 @@
     <icon>http://qiyunkong.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Web云空</rights>
     <entry>
+        <title type="html"><![CDATA[C# 类的学习]]></title>
+        <id>http://qiyunkong.github.io/post/c-lei-de-xue-xi/</id>
+        <link href="http://qiyunkong.github.io/post/c-lei-de-xue-xi/">
+        </link>
+        <updated>2020-12-17T04:40:02.000Z</updated>
+        <summary type="html"><![CDATA[<p>✍️   C# 是一个现代的、通用的、面向对象的编程语言，它是由微软（Microsoft）开发的，由 Ecma 和 ISO 核准认可的。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>✍️   C# 是一个现代的、通用的、面向对象的编程语言，它是由微软（Microsoft）开发的，由 Ecma 和 ISO 核准认可的。</p>
+<!-- more -->
+<h2 id="定义一个类">定义一个类</h2>
+<pre><code class="language-c#">
+//定义一个人员类
+class Person {
+ 	//编写类的成员
+}
+</code></pre>
+<h3 id="类的成员和修饰词">类的成员和修饰词</h3>
+<blockquote>
+<p>类的成员有:字段，属性，方法，构造，索引器，</p>
+<p>类的修饰有:公有，私有（保护），抽象</p>
+</blockquote>
+<h4 id="类的成员-字段">类的成员-字段</h4>
+<pre><code class="language-c#">
+//定义一个人员类
+class Person {
+    //字段
+    private  string name;
+    private int age;
+    private string sex;
+    private static bool isMorf;
+}
+</code></pre>
+<h4 id="类的成员-属性">类的成员-属性</h4>
+<pre><code class="language-c#">
+//定义一个人员类
+class Person {
+    //字段(上述代码)
+     
+    //Name
+    public string Name {
+        get { return name; }
+        set { name = value; }
+    }
+
+    //Age
+    public int Age {
+        set { age = value; }
+        private get { return age; }
+
+    }
+
+    //性别
+    public string Sex{
+        set { sex = value; }
+        get { return sex; }
+    }       
+
+    //静态属性不能使用非静态字段
+    public static bool Morf {
+        get { return isMorf; }
+        set { isMorf = value; }
+    }
+    
+    
+}
+</code></pre>
+<h4 id="类的成员-方法">类的成员-方法</h4>
+<pre><code class="language-c#">
+class Person {
+    //方法
+    public void Print() {
+        Console.WriteLine(&quot;none params&quot;);
+    }
+}
+</code></pre>
+<h4 id="类的成员-索引器">类的成员-索引器</h4>
+<pre><code class="language-c#">
+class Person {
+    public int this[int index]
+    {
+        get { return intarray[index]; }
+        set { intarray[index] = value; }
+    }
+}
+</code></pre>
+<h4 id="类的成员-构造">类的成员-构造</h4>
+<pre><code class="language-c#">
+class Person {
+ 	//实例构造方法
+    public Person()
+    {
+        Console.WriteLine(&quot;实例构造函数调用了&quot;);
+    }
+    //静态构造方法
+    static Person()
+    {
+        Console.WriteLine(&quot;静态构造函数调用了&quot;);
+    }
+    //析构构造函数
+    ~Person()
+    {
+        Console.WriteLine(&quot;析构构造函数被调用&quot;);
+    }
+
+}
+</code></pre>
+<h2 id="类的使用">类的使用</h2>
+<pre><code class="language-c#">static void Main(string[] args)
+{
+    //构造函数 实例化对象
+    Person p = new Person();
+    
+    //属性赋值
+    p.Name = &quot;Tony&quot;;
+    p.Age = 12;
+    p.Sex = &quot;f&quot;;
+
+    //静态的方法只能类调用
+    Person.Morf = false;
+
+    //调用方法 
+    p.Print();
+    
+    //索引器使用
+    p[0] = 12;
+    p[1] = 13;
+    p[2] = 14;
+    Console.WriteLine(&quot; p[0]=&quot; +  p[0]);
+    Console.WriteLine(&quot; p[1]=&quot; +  p[1]);
+    Console.WriteLine(&quot; p[2]=&quot; +  p[2]);
+
+
+}
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[C# 基本语法]]></title>
+        <id>http://qiyunkong.github.io/post/c-ji-ben-yu-fa/</id>
+        <link href="http://qiyunkong.github.io/post/c-ji-ben-yu-fa/">
+        </link>
+        <updated>2020-12-17T04:39:03.000Z</updated>
+        <summary type="html"><![CDATA[<p>✍️   C# 是一个现代的、通用的、面向对象的编程语言，它是由微软（Microsoft）开发的，由 Ecma 和 ISO 核准认可的。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>✍️   C# 是一个现代的、通用的、面向对象的编程语言，它是由微软（Microsoft）开发的，由 Ecma 和 ISO 核准认可的。</p>
+<!-- more -->
+<h2 id="类型转换">类型转换</h2>
+<pre><code class="language-c#">
+static void Main(string[] args)
+ {
+     //使用强制类型转换
+     int num = 100;
+     float f = (float)num;
+     Console.WriteLine(&quot;f is {0}&quot;,f);
+
+
+     //使用System.Convert类中的静态方法
+     num = 110;
+     string str = System.Convert.ToString(num);
+     Console.WriteLine(str);
+
+
+     //使用.net框架提供Parse方法
+     str = &quot;200&quot;;
+     f = float.Parse(str);
+     Console.WriteLine(str);
+
+
+     Console.WriteLine(&quot;Hello World!&quot;);
+     Console.ReadKey();
+ }
+</code></pre>
+<h2 id="认识枚举">认识枚举</h2>
+<pre><code class="language-c#"> 
+//定义枚举
+enum Gender {
+ Female,
+ Male = 5,
+ Node,
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        //枚举默认 从0开始标号
+        Console.WriteLine((int)Gender.Female);
+        Console.WriteLine((int)Gender.Male);
+        Console.WriteLine((int)Gender.Node);
+        Console.ReadKey();            
+    }
+}
+</code></pre>
+<h2 id="认识结构体">认识结构体</h2>
+<pre><code class="language-c#">
+//定义结构体
+public struct StructDemo {
+    public float x;
+    public float y;
+
+    public StructDemo(float xPos, float yPos)
+    {
+    x = xPos;
+    y = yPos;
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+    //使用结构体 必须进行初始化不然会报错
+    StructDemo s1;
+    s1.x = 10f;
+    s1.y = 20f;
+    Console.WriteLine(s1.x + &quot; &quot; + s1.y);
+
+
+    //new 使用结构体
+    StructDemo s2 = new StructDemo();
+    Console.WriteLine(s2.x + &quot; &quot; + s2.y);
+
+    //new 使用机构体
+    StructDemo s3 = new StructDemo(10f,10f);
+    Console.WriteLine(s3.x + &quot; &quot; + s3.y);
+
+
+    Console.WriteLine(&quot;Hello World!&quot;);
+    Console.ReadKey();
+    }
+}
+</code></pre>
+<h2 id="认识数组">认识数组</h2>
+<pre><code class="language-c#">
+static void Main(string[] args)
+{
+    //1.声明 一个长度为5并名字为a的数组
+    int[] a = new int[5];
+    a[0] = 1;
+    a[1] = 2;
+    Console.WriteLine(a[0] + &quot; &quot; + a[3]);
+
+    //2.声明一个数组
+    int[] numArray = new int[] { 1, 2, 3, 4, 5 };
+    string str = &quot;&quot;;
+    for (int i = 0; i &lt; numArray.Length; i++)
+    {
+    str += numArray[i];
+
+    }
+    Console.WriteLine(&quot;我是for循环=&quot;+str);
+
+    //3.声明一个数组
+    int[] numArray2 = { 1, 2, 3, 4, 5, };
+    str = &quot;&quot;;
+    foreach (var item in numArray2)
+    {
+    str += item;
+    }
+    Console.WriteLine(&quot;我是foreach循环=&quot;+str);
+    Console.ReadKey();
+}
+</code></pre>
+<h2 id="综合测试">综合测试</h2>
+<p>定义枚举</p>
+<pre><code class="language-c#">
+enum EnuDemo {
+    Boy,
+    Girl,
+    Man = 5,
+    Female
+}
+</code></pre>
+<p>定义结构体</p>
+<pre><code class="language-c#">
+public struct Complex {
+    public int real;
+    public int imageinary;
+
+    public Complex(int _real, int _imaginary)
+    {
+    this.real = _real;
+    this.imageinary = _imaginary;
+    }
+
+    //运算符重载
+    public static Complex operator +(Complex c1, Complex c2)
+    {
+    Complex result = new Complex();
+    result.real = c1.real + c2.real;
+    result.imageinary = c1.imageinary + c2.imageinary;
+    return result;
+
+    }
+
+    //override 重写修饰符 
+    public override string ToString()
+    {
+    return string.Format(&quot;我是加完后的real:{0}&quot;+ &quot;  &quot;+ &quot;我是加完后的imageinary:{1}&quot;, real, imageinary);
+    }
+
+}
+</code></pre>
+<p>定义方法</p>
+<pre><code class="language-c#">
+public static void SwitchMethod(EnuDemo item)
+{
+    switch (item) {
+    case EnuDemo.Boy:
+    Console.WriteLine(&quot;It's boy&quot;);
+    break;
+    case EnuDemo.Girl:
+    Console.WriteLine(&quot;It's girl&quot;);
+    break;
+    case EnuDemo.Man:
+    Console.WriteLine(&quot;It's man&quot;);
+    break;
+    case EnuDemo.Female:
+    Console.WriteLine(&quot;It's Female&quot;);
+    break;
+    default:
+    Console.WriteLine(&quot;Invaild type&quot;);
+    break;
+    }
+}
+</code></pre>
+<p>Main方法运行</p>
+<pre><code class="language-c#">
+
+static void Main(string[] args)
+{
+    //使用运算符重载
+    Complex c1 = new Complex(1, 2);
+    Complex c2 = new Complex(3, 4);
+    Complex sum = c1 + c2;
+    Console.WriteLine(sum);
+
+
+    //if-else 分支语句
+    bool isFlay = true;
+    int num = 1;
+    if (isFlay)
+    {
+    Console.WriteLine(&quot;It's true&quot;);
+    }
+    else {
+    Console.WriteLine(&quot;It's false&quot;);
+    }
+
+    if (isFlay &amp;&amp; num &gt; 2)
+    {
+    Console.WriteLine(&quot;It's true,It's num &gt; 2&quot;);
+
+    }
+    else if (isFlay &amp;&amp; num &lt; 2)
+    {
+    Console.WriteLine(&quot;It's true,It's num &lt; 2&quot;);
+    }
+    else {
+    Console.WriteLine(&quot;Other&quot;);
+    }
+
+    //SwitchMethod
+    Program.SwitchMethod(EnuDemo.Boy);
+    Console.ReadKey();
+}
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[C# 第一个程序]]></title>
         <id>http://qiyunkong.github.io/post/c-di-yi-ge-cheng-xu/</id>
         <link href="http://qiyunkong.github.io/post/c-di-yi-ge-cheng-xu/">
         </link>
         <updated>2020-12-17T01:45:49.000Z</updated>
-        <content type="html"><![CDATA[<!-- more -->
-<p>✍️   C# 是一个现代的、通用的、面向对象的编程语言，它是由微软（Microsoft）开发的，由 Ecma 和 ISO 核准认可的。</p>
+        <summary type="html"><![CDATA[<p>✍️   C# 是一个现代的、通用的、面向对象的编程语言，它是由微软（Microsoft）开发的，由 Ecma 和 ISO 核准认可的。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>✍️   C# 是一个现代的、通用的、面向对象的编程语言，它是由微软（Microsoft）开发的，由 Ecma 和 ISO 核准认可的。</p>
 <!-- more -->
-<pre><code class="language-C#">//引入命名空间
+<pre><code class="language-C#">
+//引入命名空间
 using System; 
-
 //命名空间
 namespace ConsoleApp1
 {
-    //类
+    //命名类
     class Program
     {
         public static void Method() {
@@ -41,6 +412,12 @@ namespace ConsoleApp1
     }
 }
 </code></pre>
+<p>小结</p>
+<ul>
+<li>调试 F2</li>
+<li>Main方法</li>
+</ul>
+<h2 id="特点">特点</h2>
 ]]></content>
     </entry>
     <entry>

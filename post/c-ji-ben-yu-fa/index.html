@@ -5,7 +5,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    关于 | Web云空
+    C# 基本语法 | Web云空
 </title>
 <link rel="shortcut icon" href="http://qiyunkong.github.io/favicon.ico?v=1608180161131">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
@@ -99,26 +99,251 @@
                 <div id="content" class="main-container-left">
                     <article class="post i-card">
                         <h2 class="post-title">
-                            关于
+                            C# 基本语法
                         </h2>
                         <div class="post-info">
-                            <time class="post-time">2019-01-25</time>
+                            <time class="post-time">2020-12-17</time>
                             
                         </div>
                         
                                 <div class="post-content">
-                                    <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
+                                    <p>✍️   C# 是一个现代的、通用的、面向对象的编程语言，它是由微软（Microsoft）开发的，由 Ecma 和 ISO 核准认可的。</p>
+<!-- more -->
+<h2 id="类型转换">类型转换</h2>
+<pre><code class="language-c#">
+static void Main(string[] args)
+ {
+     //使用强制类型转换
+     int num = 100;
+     float f = (float)num;
+     Console.WriteLine(&quot;f is {0}&quot;,f);
+
+
+     //使用System.Convert类中的静态方法
+     num = 110;
+     string str = System.Convert.ToString(num);
+     Console.WriteLine(str);
+
+
+     //使用.net框架提供Parse方法
+     str = &quot;200&quot;;
+     f = float.Parse(str);
+     Console.WriteLine(str);
+
+
+     Console.WriteLine(&quot;Hello World!&quot;);
+     Console.ReadKey();
+ }
+</code></pre>
+<h2 id="认识枚举">认识枚举</h2>
+<pre><code class="language-c#"> 
+//定义枚举
+enum Gender {
+ Female,
+ Male = 5,
+ Node,
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        //枚举默认 从0开始标号
+        Console.WriteLine((int)Gender.Female);
+        Console.WriteLine((int)Gender.Male);
+        Console.WriteLine((int)Gender.Node);
+        Console.ReadKey();            
+    }
+}
+</code></pre>
+<h2 id="认识结构体">认识结构体</h2>
+<pre><code class="language-c#">
+//定义结构体
+public struct StructDemo {
+    public float x;
+    public float y;
+
+    public StructDemo(float xPos, float yPos)
+    {
+    x = xPos;
+    y = yPos;
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+    //使用结构体 必须进行初始化不然会报错
+    StructDemo s1;
+    s1.x = 10f;
+    s1.y = 20f;
+    Console.WriteLine(s1.x + &quot; &quot; + s1.y);
+
+
+    //new 使用结构体
+    StructDemo s2 = new StructDemo();
+    Console.WriteLine(s2.x + &quot; &quot; + s2.y);
+
+    //new 使用机构体
+    StructDemo s3 = new StructDemo(10f,10f);
+    Console.WriteLine(s3.x + &quot; &quot; + s3.y);
+
+
+    Console.WriteLine(&quot;Hello World!&quot;);
+    Console.ReadKey();
+    }
+}
+</code></pre>
+<h2 id="认识数组">认识数组</h2>
+<pre><code class="language-c#">
+static void Main(string[] args)
+{
+    //1.声明 一个长度为5并名字为a的数组
+    int[] a = new int[5];
+    a[0] = 1;
+    a[1] = 2;
+    Console.WriteLine(a[0] + &quot; &quot; + a[3]);
+
+    //2.声明一个数组
+    int[] numArray = new int[] { 1, 2, 3, 4, 5 };
+    string str = &quot;&quot;;
+    for (int i = 0; i &lt; numArray.Length; i++)
+    {
+    str += numArray[i];
+
+    }
+    Console.WriteLine(&quot;我是for循环=&quot;+str);
+
+    //3.声明一个数组
+    int[] numArray2 = { 1, 2, 3, 4, 5, };
+    str = &quot;&quot;;
+    foreach (var item in numArray2)
+    {
+    str += item;
+    }
+    Console.WriteLine(&quot;我是foreach循环=&quot;+str);
+    Console.ReadKey();
+}
+</code></pre>
+<h2 id="综合测试">综合测试</h2>
+<p>定义枚举</p>
+<pre><code class="language-c#">
+enum EnuDemo {
+    Boy,
+    Girl,
+    Man = 5,
+    Female
+}
+</code></pre>
+<p>定义结构体</p>
+<pre><code class="language-c#">
+public struct Complex {
+    public int real;
+    public int imageinary;
+
+    public Complex(int _real, int _imaginary)
+    {
+    this.real = _real;
+    this.imageinary = _imaginary;
+    }
+
+    //运算符重载
+    public static Complex operator +(Complex c1, Complex c2)
+    {
+    Complex result = new Complex();
+    result.real = c1.real + c2.real;
+    result.imageinary = c1.imageinary + c2.imageinary;
+    return result;
+
+    }
+
+    //override 重写修饰符 
+    public override string ToString()
+    {
+    return string.Format(&quot;我是加完后的real:{0}&quot;+ &quot;  &quot;+ &quot;我是加完后的imageinary:{1}&quot;, real, imageinary);
+    }
+
+}
+</code></pre>
+<p>定义方法</p>
+<pre><code class="language-c#">
+public static void SwitchMethod(EnuDemo item)
+{
+    switch (item) {
+    case EnuDemo.Boy:
+    Console.WriteLine(&quot;It's boy&quot;);
+    break;
+    case EnuDemo.Girl:
+    Console.WriteLine(&quot;It's girl&quot;);
+    break;
+    case EnuDemo.Man:
+    Console.WriteLine(&quot;It's man&quot;);
+    break;
+    case EnuDemo.Female:
+    Console.WriteLine(&quot;It's Female&quot;);
+    break;
+    default:
+    Console.WriteLine(&quot;Invaild type&quot;);
+    break;
+    }
+}
+</code></pre>
+<p>Main方法运行</p>
+<pre><code class="language-c#">
+
+static void Main(string[] args)
+{
+    //使用运算符重载
+    Complex c1 = new Complex(1, 2);
+    Complex c2 = new Complex(3, 4);
+    Complex sum = c1 + c2;
+    Console.WriteLine(sum);
+
+
+    //if-else 分支语句
+    bool isFlay = true;
+    int num = 1;
+    if (isFlay)
+    {
+    Console.WriteLine(&quot;It's true&quot;);
+    }
+    else {
+    Console.WriteLine(&quot;It's false&quot;);
+    }
+
+    if (isFlay &amp;&amp; num &gt; 2)
+    {
+    Console.WriteLine(&quot;It's true,It's num &gt; 2&quot;);
+
+    }
+    else if (isFlay &amp;&amp; num &lt; 2)
+    {
+    Console.WriteLine(&quot;It's true,It's num &lt; 2&quot;);
+    }
+    else {
+    Console.WriteLine(&quot;Other&quot;);
+    }
+
+    //SwitchMethod
+    Program.SwitchMethod(EnuDemo.Boy);
+    Console.ReadKey();
+}
+</code></pre>
 
                                 </div>
                     </article>
                     <!--  -->
                     
+                        <div class="next-post">
+                            <div class="next">下一篇</div>
+                            <a href="http://qiyunkong.github.io/post/c-di-yi-ge-cheng-xu/">
+                                <h3 class="post-title">
+                                    C# 第一个程序
+                                </h3>
+                            </a>
+                        </div>
+                        
                             <div id="disqus_thread"></div>
                             <div id="gitalk-container"></div>
                 </div>
@@ -135,10 +360,11 @@
             <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99">🏠 关于本站</a></li>
-<li><a href="#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81">👨‍💻 博主是谁</a></li>
-<li><a href="#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD">⛹ 兴趣爱好</a></li>
-<li><a href="#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80">📬 联系我呀</a></li>
+<li><a href="#%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2">类型转换</a></li>
+<li><a href="#%E8%AE%A4%E8%AF%86%E6%9E%9A%E4%B8%BE">认识枚举</a></li>
+<li><a href="#%E8%AE%A4%E8%AF%86%E7%BB%93%E6%9E%84%E4%BD%93">认识结构体</a></li>
+<li><a href="#%E8%AE%A4%E8%AF%86%E6%95%B0%E7%BB%84">认识数组</a></li>
+<li><a href="#%E7%BB%BC%E5%90%88%E6%B5%8B%E8%AF%95">综合测试</a></li>
 </ul>
 </li>
 </ul>

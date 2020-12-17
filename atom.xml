@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://qiyunkong.github.io</id>
     <title>Web云空</title>
-    <updated>2020-12-17T02:19:16.279Z</updated>
+    <updated>2020-12-17T02:56:38.718Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://qiyunkong.github.io"/>
     <link rel="self" href="http://qiyunkong.github.io/atom.xml"/>
@@ -11,16 +11,52 @@
     <icon>http://qiyunkong.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Web云空</rights>
     <entry>
+        <title type="html"><![CDATA[C# 第一个程序]]></title>
+        <id>http://qiyunkong.github.io/post/c-di-yi-ge-cheng-xu/</id>
+        <link href="http://qiyunkong.github.io/post/c-di-yi-ge-cheng-xu/">
+        </link>
+        <updated>2020-12-17T01:45:49.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<p>✍️   C# 是一个现代的、通用的、面向对象的编程语言，它是由微软（Microsoft）开发的，由 Ecma 和 ISO 核准认可的。</p>
+<!-- more -->
+<pre><code class="language-C#">//引入命名空间
+using System; 
+
+//命名空间
+namespace ConsoleApp1
+{
+    //类
+    class Program
+    {
+        public static void Method() {
+            Console.WriteLine(&quot;I am qiyunkong&quot;);
+        }
+
+        //Main 方法是程序的入口点
+        static void Main(string[] args)
+        {
+            Program.Method();
+            Console.WriteLine(&quot;Hello World!&quot;);
+        }
+    }
+}
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>http://qiyunkong.github.io/post/hello-gridea/</id>
         <link href="http://qiyunkong.github.io/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 *<em>Gridea</em></p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 *<em>Gridea</em></p>
+<!-- more -->
+<ul>
+<li>！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</li>
+</ul>
 <!-- more -->
 <p><a href="https://github.com/getgridea/gridea">Github</a><br>
 <a href="https://gridea.dev/">Gridea 主页</a><br>

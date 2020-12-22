@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://qiyunkong.github.io</id>
     <title>Web云空</title>
-    <updated>2020-12-22T01:46:49.968Z</updated>
+    <updated>2020-12-22T01:54:13.060Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://qiyunkong.github.io"/>
     <link rel="self" href="https://qiyunkong.github.io/atom.xml"/>
@@ -43,7 +43,7 @@
 ●信息的存储(如书写、摄影、录音、录像等)<br>
 ●信息的施用(如控制、显示、指挥等)</p>
 <h2 id="人工进行信息处理的过程">人工进行信息处理的过程</h2>
-<p>导入（神经网络）--》思维器官（加工/记忆信息）--》导出神经网络（传递信息）--》</p>
+<p>导入（神经网络）--》思维器官（加工/记忆信息）--》导出神经网络（传递信息）--》外部世界（信源/信速）--》效应器官（施用信息）感觉器官（获取信息）--》</p>
 <p>人工信息处理的不足</p>
 <ul>
 <li>算不快</li>

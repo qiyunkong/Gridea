@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://qiyunkong.github.io</id>
     <title>Web云空</title>
-    <updated>2020-12-17T09:02:54.734Z</updated>
+    <updated>2020-12-22T01:46:49.968Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://qiyunkong.github.io"/>
     <link rel="self" href="https://qiyunkong.github.io/atom.xml"/>
@@ -10,6 +10,82 @@
     <logo>https://qiyunkong.github.io/images/avatar.png</logo>
     <icon>https://qiyunkong.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Web云空</rights>
+    <entry>
+        <title type="html"><![CDATA[信息与信息技术]]></title>
+        <id>https://qiyunkong.github.io/post/xin-xi-yu-xin-xi-ji-zhu/</id>
+        <link href="https://qiyunkong.github.io/post/xin-xi-yu-xin-xi-ji-zhu/">
+        </link>
+        <updated>2020-12-22T01:35:07.000Z</updated>
+        <summary type="html"><![CDATA[<p>信息技术（Information Technology，缩写IT），是主要用于管理和处理信息所采用的各种技术的总称。它主要是应用计算机科学和通信技术来设计、开发、安装和实施信息系统及应用软件。它也常被称为信息和通信技术（Information and Communications Technology, ICT）。主要包括传感技术、计算机与智能技术、通信技术和控制技术</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>信息技术（Information Technology，缩写IT），是主要用于管理和处理信息所采用的各种技术的总称。它主要是应用计算机科学和通信技术来设计、开发、安装和实施信息系统及应用软件。它也常被称为信息和通信技术（Information and Communications Technology, ICT）。主要包括传感技术、计算机与智能技术、通信技术和控制技术</p>
+<!-- more -->
+<h2 id="信息information是什么">信息(information)是什么?</h2>
+<p>信息有多种多样的含义,至今并没有统一的定义<br>
+日常生活中比较笼统和模糊的理解是:<br>
+■语言、文字、图画、照片等所表达的内容<br>
+■读书、听课、交谈等所学习和了解的知识<br>
+■为了做判断、订计划或解决问题等所需要的数据和资料口比较正式也比较抽象一些的描述是:<br>
+信息是事物运动状态和状态变化的方式<br>
+信息就是信息，它不是物质也不是能量.信息与物质、能7/8是客观世界的三大构成要素。</p>
+<h2 id="信息有哪些性质">信息有哪些性质?</h2>
+<p>普遍性:凡有事物的地方，就必然存在信息，信息广泛存在<br>
+动态性:事物是在不断运动变化之中的，信息也必然随之而改变时效性:由于信息的动态性，信息的使用价值会随着时间而衰减<br>
+多样性:语言、文字、声音、图片等(通称为信息的载体或媒体)都是信息的表现形式<br>
+可传递性:信息可通过媒体在人-人，人-物，物-物之间传递，信息传递才能发扫信息的作用<br>
+可共享性:信息与物质、能量不同，同一信息在同一时间可被多个主体共有，信息能无限地进行复制和传递，不因使用而有损耗<br>
+快速增长性:随着社会的发展，信息在快速增长!(信息爆炸)</p>
+<h2 id="什么是信息处理">什么是信息处理?</h2>
+<p>信息处理指的是与下列内容相关的行为和活动:<br>
+●信息的收集(如信息的感知、测量、获取、输入等)<br>
+●信息的传递(如邮寄、出版、电报、电话、广播等)<br>
+●信息的加工(如分类、计算、分析、转换、检索等)<br>
+●信息的存储(如书写、摄影、录音、录像等)<br>
+●信息的施用(如控制、显示、指挥等)</p>
+<h2 id="人工进行信息处理的过程">人工进行信息处理的过程</h2>
+<p>导入（神经网络）--》思维器官（加工/记忆信息）--》导出神经网络（传递信息）--》</p>
+<p>人工信息处理的不足</p>
+<ul>
+<li>算不快</li>
+<li>记不住</li>
+<li>传不远</li>
+<li>看听不清</li>
+</ul>
+<h2 id="什么是信息技术">什么是信息技术?</h2>
+<p>信息技术（Information Technology简称IT)指的是用来扩展人们信息器官功能、协助人们更有效地进行信息处理的一门技术。内容包括:<br>
+扩展神经系统功能<strong>通信技术</strong><br>
+扩展大脑功能的<strong>计算与存储技术</strong><br>
+扩展神经系统功能的<strong>通信技术</strong><br>
+扩展感觉器官功能的<strong>感测（获取）技术</strong><br>
+外部世界事物<br>
+扩展效应器官功能的<strong>控制与是示技术</strong></p>
+<h2 id="现代信息技术有什么特征">现代信息技术有什么特征?</h2>
+<p>三大特征:</p>
+<ul>
+<li>采用微电子和光电子器件</li>
+<li><strong>以数字技术（计算机）为基础</strong></li>
+<li><strong>以计算机及其软件技术为核心</strong></li>
+</ul>
+<p>核心技术：</p>
+<ul>
+<li>计算机、软件、集成电路、通信、广播、互联网、自动控制、机器人等</li>
+</ul>
+<h2 id="科技进步对人类社会发展的影响">科技进步对人类社会发展的影响</h2>
+<p>在历史长河中，一些科学发现和技术发明曾经引发了一个国家或民族的跨越式发展和变革,进而导致了人类生活方式或国家的根本性变化<br>
+<strong>蒸汽机的发明引发了第一次工业革命(从英国开始)</strong><br>
+●蒸汽机的发明，在很短时间内，改变了整个世界的面貌(马克思)<br>
+<strong>电动机和发电机的发明引发了第二次工业革命</strong><br>
+●电动机和发电机先后发明使电气化与工业化实现了有机结合，以美国为代表的工业化国家利用这一结合取得了快速的发展，实现了百年的持续发展<br>
+<strong>信息技术引发了第三次工业革命</strong><br>
+●20世纪70年代后,美国面临以日本为代表的工业化国家激烈竞争，甚至出现了短暂的被动局面。从20世纪80年代起,美国利用信息技术实现了近30年的持续快速发展,保持了综合实力的领先地位</p>
+<h2 id="什么是信息化">什么是信息化</h2>
+<p>2000年“全球信息社会冲绳宪章”明确提出:</p>
+<ul>
+<li>信息技术是影响21世纪发展的最强劲的驱动力量·信息化一由信息技术驱动的经济和社会的变革</li>
+<li>信息化的本质是利用信息技术帮助社会个人和群体有效利用知识和新思想，从而能建成充分发挥人的潜力，实现其抱负的信息社会。</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[C# 类的学习]]></title>
         <id>https://qiyunkong.github.io/post/c-lei-de-xue-xi/</id>
@@ -21,8 +97,7 @@
         <content type="html"><![CDATA[<p>✍️   C# 是一个现代的、通用的、面向对象的编程语言，它是由微软（Microsoft）开发的，由 Ecma 和 ISO 核准认可的。</p>
 <!-- more -->
 <h2 id="定义一个类">定义一个类</h2>
-<pre><code class="language-c#">
-//定义一个人员类
+<pre><code class="language-c#">//定义一个人员类
 class Person {
  	//编写类的成员
 }
@@ -33,8 +108,7 @@ class Person {
 <p>类的修饰有:公有，私有（保护），抽象</p>
 </blockquote>
 <h4 id="类的成员-字段">类的成员-字段</h4>
-<pre><code class="language-c#">
-//定义一个人员类
+<pre><code class="language-c#">//定义一个人员类
 class Person {
     //字段
     private  string name;
@@ -44,8 +118,7 @@ class Person {
 }
 </code></pre>
 <h4 id="类的成员-属性">类的成员-属性</h4>
-<pre><code class="language-c#">
-//定义一个人员类
+<pre><code class="language-c#">//定义一个人员类
 class Person {
     //字段(上述代码)
      
@@ -78,8 +151,7 @@ class Person {
 }
 </code></pre>
 <h4 id="类的成员-方法">类的成员-方法</h4>
-<pre><code class="language-c#">
-class Person {
+<pre><code class="language-c#">class Person {
     //方法
     public void Print() {
         Console.WriteLine(&quot;none params&quot;);
@@ -87,8 +159,7 @@ class Person {
 }
 </code></pre>
 <h4 id="类的成员-索引器">类的成员-索引器</h4>
-<pre><code class="language-c#">
-class Person {
+<pre><code class="language-c#">class Person {
     public int this[int index]
     {
         get { return intarray[index]; }
@@ -97,8 +168,7 @@ class Person {
 }
 </code></pre>
 <h4 id="类的成员-构造">类的成员-构造</h4>
-<pre><code class="language-c#">
-class Person {
+<pre><code class="language-c#">class Person {
  	//实例构造方法
     public Person()
     {

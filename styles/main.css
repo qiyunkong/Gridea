@@ -1003,7 +1003,7 @@ body {
   border-radius: 50%;
   background-position: center center;
   background-origin: content-box;
-  background-size: 150%;
+  background-size: 144%;
   background-repeat: no-repeat;
   box-shadow: 0 0 30px rgba(200, 200, 200, 0.25);
 }

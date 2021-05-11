@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://qiyunkong.github.io</id>
+    <id>http://qiyunkong.github.io</id>
     <title>技术飞</title>
-    <updated>2021-05-11T00:47:06.785Z</updated>
+    <updated>2021-05-11T00:53:14.948Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://qiyunkong.github.io"/>
-    <link rel="self" href="https://qiyunkong.github.io/atom.xml"/>
+    <link rel="alternate" href="http://qiyunkong.github.io"/>
+    <link rel="self" href="http://qiyunkong.github.io/atom.xml"/>
     <subtitle>IT，生活，笔记，开发，学习</subtitle>
-    <logo>https://qiyunkong.github.io/images/avatar.png</logo>
-    <icon>https://qiyunkong.github.io/favicon.ico</icon>
+    <logo>http://qiyunkong.github.io/images/avatar.png</logo>
+    <icon>http://qiyunkong.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 技术飞</rights>
     <entry>
         <title type="html"><![CDATA[毕业设计之胡思乱想（一）]]></title>
-        <id>https://qiyunkong.github.io/post/bishehs1/</id>
-        <link href="https://qiyunkong.github.io/post/bishehs1/">
+        <id>http://qiyunkong.github.io/post/bishehs1/</id>
+        <link href="http://qiyunkong.github.io/post/bishehs1/">
         </link>
         <updated>2021-05-11T00:26:47.000Z</updated>
         <content type="html"><![CDATA[<!-- more -->
@@ -21,8 +21,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[信息与信息技术]]></title>
-        <id>https://qiyunkong.github.io/post/xin-xi-yu-xin-xi-ji-zhu/</id>
-        <link href="https://qiyunkong.github.io/post/xin-xi-yu-xin-xi-ji-zhu/">
+        <id>http://qiyunkong.github.io/post/xin-xi-yu-xin-xi-ji-zhu/</id>
+        <link href="http://qiyunkong.github.io/post/xin-xi-yu-xin-xi-ji-zhu/">
         </link>
         <updated>2020-12-22T01:35:07.000Z</updated>
         <summary type="html"><![CDATA[<p>信息技术（Information Technology，缩写IT），是主要用于管理和处理信息所采用的各种技术的总称。它主要是应用计算机科学和通信技术来设计、开发、安装和实施信息系统及应用软件。它也常被称为信息和通信技术（Information and Communications Technology, ICT）。主要包括传感技术、计算机与智能技术、通信技术和控制技术</p>
@@ -104,8 +104,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[C# 类的学习]]></title>
-        <id>https://qiyunkong.github.io/post/c-lei-de-xue-xi/</id>
-        <link href="https://qiyunkong.github.io/post/c-lei-de-xue-xi/">
+        <id>http://qiyunkong.github.io/post/c-lei-de-xue-xi/</id>
+        <link href="http://qiyunkong.github.io/post/c-lei-de-xue-xi/">
         </link>
         <updated>2020-12-17T04:40:02.000Z</updated>
         <summary type="html"><![CDATA[<p>✍️   C# 是一个现代的、通用的、面向对象的编程语言，它是由微软（Microsoft）开发的，由 Ecma 和 ISO 核准认可的。</p>
@@ -235,8 +235,8 @@ class Person {
     </entry>
     <entry>
         <title type="html"><![CDATA[C# 基本语法]]></title>
-        <id>https://qiyunkong.github.io/post/c-ji-ben-yu-fa/</id>
-        <link href="https://qiyunkong.github.io/post/c-ji-ben-yu-fa/">
+        <id>http://qiyunkong.github.io/post/c-ji-ben-yu-fa/</id>
+        <link href="http://qiyunkong.github.io/post/c-ji-ben-yu-fa/">
         </link>
         <updated>2020-12-17T04:39:03.000Z</updated>
         <summary type="html"><![CDATA[<p>✍️   C# 是一个现代的、通用的、面向对象的编程语言，它是由微软（Microsoft）开发的，由 Ecma 和 ISO 核准认可的。</p>
@@ -468,8 +468,8 @@ static void Main(string[] args)
     </entry>
     <entry>
         <title type="html"><![CDATA[C# 第一个程序]]></title>
-        <id>https://qiyunkong.github.io/post/c-di-yi-ge-cheng-xu/</id>
-        <link href="https://qiyunkong.github.io/post/c-di-yi-ge-cheng-xu/">
+        <id>http://qiyunkong.github.io/post/c-di-yi-ge-cheng-xu/</id>
+        <link href="http://qiyunkong.github.io/post/c-di-yi-ge-cheng-xu/">
         </link>
         <updated>2020-12-17T01:45:49.000Z</updated>
         <summary type="html"><![CDATA[<p>✍️   C# 是一个现代的、通用的、面向对象的编程语言，它是由微软（Microsoft）开发的，由 Ecma 和 ISO 核准认可的。</p>
@@ -508,8 +508,8 @@ namespace ConsoleApp1
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://qiyunkong.github.io/post/hello-gridea/</id>
-        <link href="https://qiyunkong.github.io/post/hello-gridea/">
+        <id>http://qiyunkong.github.io/post/hello-gridea/</id>
+        <link href="http://qiyunkong.github.io/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 *<em>Gridea</em></p>

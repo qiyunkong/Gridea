@@ -5,9 +5,9 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    毕业设计之胡思乱想（一） | 技术飞
+    毕业设计之胡思乱想的宏与微的设计思想（一） | 技术飞
 </title>
-<link rel="shortcut icon" href="http://qiyunkong.github.io/favicon.ico?v=1620694392833">
+<link rel="shortcut icon" href="http://qiyunkong.github.io/favicon.ico?v=1620745668968">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -28,7 +28,7 @@
     <div class="nav">
         <div class="logo">
             <a href="http://qiyunkong.github.io">
-                <img class="avatar" src="http://qiyunkong.github.io/images/avatar.png?v=1620694392833" alt="">
+                <img class="avatar" src="http://qiyunkong.github.io/images/avatar.png?v=1620745668968" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -99,20 +99,176 @@
                 <div id="content" class="main-container-left">
                     <article class="post i-card">
                         <h2 class="post-title">
-                            毕业设计之胡思乱想（一）
+                            毕业设计之胡思乱想的宏与微的设计思想（一）
                         </h2>
                         <div class="post-info">
                             <time class="post-time">2021-05-11</time>
                             
                                 <a href="http://qiyunkong.github.io/tag/bishe/" class="post-tag i-tag
-                            i-tag-other_3">
+                            i-tag-error">
                             #毕设
                         </a>
                                 
                         </div>
                         
+                            <div class="post-feature-image" style="background-image: url('https://z3.ax1x.com/2021/05/11/gdnjBT.png')"></div>
+                            
                                 <div class="post-content">
-                                    <!-- more -->
+                                    <p>没事，看两下，说不定你就是下一个被入坑的人，喜欢给别人胡扯就看，喜欢看笑话就看，了解编程的魅力和IT的世界</p>
+<!-- more -->
+<p>可能有的人对宏任务与微任务有些了解，而我现在胡乱提出的宏与微的设计与它们并没有关系，宏与微的设计是抽象的概念，是用于搭建项目工程的一个方向，或者是一种架构设计方向，现在的开发会把大的工程的进行拆解，进行工程化。就拿我们知道那架构进行讲解，初学者一般都会知道三层架构，那么三层架构指那三层我们就不指出了，因为三层架构是属于分层架构的一个实例，可能初学者就会一直思考三层架构是哪个三个，都代表什么意思，这是一很大的误区，架构本就是一种思想，可能有些学计算机的学生可能一直以为三层架构，分三层，表现层（presentation）、业务层（business）、数据层（persistence）、以后的项目架构牢牢锁在别人的实例和思想中，一直没有很大工程设计思想，我先引入一下现在常见的架构的思想，在开始我的表演，以下说法都是个人理解，如果有偏见，那就是你对，别杠。</p>
+<h2 id="一-分层架构">一、分层架构</h2>
+<p>分层架构（layered architecture）是最常见的软件架构，也是事实上的标准架构。如果你不知道要用什么架构，那就用它。</p>
+<p>这种架构将软件分成若干个水平层，每一层都有清晰的角色和分工，不需要知道其他层的细节。层与层之间通过接口通信。</p>
+<p>虽然没有明确约定，软件一定要分成多少层，但是四层的结构最常见。</p>
+<figure data-type="image" tabindex="1"><img src="http://www.ruanyifeng.com/blogimg/asset/2016/bg2016090302.png" alt="img" loading="lazy"></figure>
+<blockquote>
+<ul>
+<li>表现层（presentation）：用户界面，负责视觉和用户互动</li>
+<li>业务层（business）：实现业务逻辑</li>
+<li>持久层（persistence）：提供数据，SQL 语句就放在这一层</li>
+<li>数据库（database） ：保存数据</li>
+</ul>
+</blockquote>
+<p>有的软件在逻辑层和持久层之间，加了一个服务层（service），提供不同业务逻辑需要的一些通用接口。</p>
+<p>用户的请求将依次通过这四层的处理，不能跳过其中任何一层。</p>
+<figure data-type="image" tabindex="2"><img src="http://www.ruanyifeng.com/blogimg/asset/2016/bg2016090303.png" alt="img" loading="lazy"></figure>
+<p>优点</p>
+<blockquote>
+<ul>
+<li>结构简单，容易理解和开发</li>
+<li>不同技能的程序员可以分工，负责不同的层，天然适合大多数软件公司的组织架构</li>
+<li>每一层都可以独立测试，其他层的接口通过模拟解决</li>
+</ul>
+</blockquote>
+<p>缺点</p>
+<blockquote>
+<ul>
+<li>一旦环境变化，需要代码调整或增加功能时，通常比较麻烦和费时</li>
+<li>部署比较麻烦，即使只修改一个小地方，往往需要整个软件重新部署，不容易做持续发布</li>
+<li>软件升级时，可能需要整个服务暂停</li>
+<li>扩展性差。用户请求大量增加时，必须依次扩展每一层，由于每一层内部是耦合的，扩展会很困难</li>
+</ul>
+</blockquote>
+<h2 id="二-事件驱动架构">二、事件驱动架构</h2>
+<p>事件（event）是状态发生变化时，软件发出的通知。</p>
+<p>事件驱动架构（event-driven architecture）就是通过事件进行通信的软件架构。它分成四个部分。</p>
+<figure data-type="image" tabindex="3"><img src="http://www.ruanyifeng.com/blogimg/asset/2016/bg2016090304.png" alt="img" loading="lazy"></figure>
+<blockquote>
+<ul>
+<li>事件队列（event queue）：接收事件的入口</li>
+<li>分发器（event mediator）：将不同的事件分发到不同的业务逻辑单元</li>
+<li>事件通道（event channel）：分发器与处理器之间的联系渠道</li>
+<li>事件处理器（event processor）：实现业务逻辑，处理完成后会发出事件，触发下一步操作</li>
+</ul>
+</blockquote>
+<p>对于简单的项目，事件队列、分发器和事件通道，可以合为一体，整个软件就分成事件代理和事件处理器两部分。</p>
+<figure data-type="image" tabindex="4"><img src="http://www.ruanyifeng.com/blogimg/asset/2016/bg2016090305.png" alt="img" loading="lazy"></figure>
+<p>优点</p>
+<blockquote>
+<ul>
+<li>分布式的异步架构，事件处理器之间高度解耦，软件的扩展性好</li>
+<li>适用性广，各种类型的项目都可以用</li>
+<li>性能较好，因为事件的异步本质，软件不易产生堵塞</li>
+<li>事件处理器可以独立地加载和卸载，容易部署</li>
+</ul>
+</blockquote>
+<p>缺点</p>
+<blockquote>
+<ul>
+<li>涉及异步编程（要考虑远程通信、失去响应等情况），开发相对复杂</li>
+<li>难以支持原子性操作，因为事件通过会涉及多个处理器，很难回滚</li>
+<li>分布式和异步特性导致这个架构较难测试</li>
+</ul>
+</blockquote>
+<h2 id="三-微核架构">三、微核架构</h2>
+<p>微核架构（microkernel architecture）又称为&quot;插件架构&quot;（plug-in architecture），指的是软件的内核相对较小，主要功能和业务逻辑都通过插件实现。</p>
+<p>内核（core）通常只包含系统运行的最小功能。插件则是互相独立的，插件之间的通信，应该减少到最低，避免出现互相依赖的问题。</p>
+<figure data-type="image" tabindex="5"><img src="http://www.ruanyifeng.com/blogimg/asset/2016/bg2016090306.png" alt="img" loading="lazy"></figure>
+<p>优点</p>
+<blockquote>
+<ul>
+<li>良好的功能延伸性（extensibility），需要什么功能，开发一个插件即可</li>
+<li>功能之间是隔离的，插件可以独立的加载和卸载，使得它比较容易部署，</li>
+<li>可定制性高，适应不同的开发需要</li>
+<li>可以渐进式地开发，逐步增加功能</li>
+</ul>
+</blockquote>
+<p>缺点</p>
+<blockquote>
+<ul>
+<li>扩展性（scalability）差，内核通常是一个独立单元，不容易做成分布式</li>
+<li>开发难度相对较高，因为涉及到插件与内核的通信，以及内部的插件登记机制</li>
+</ul>
+</blockquote>
+<h2 id="四-微服务架构">四、微服务架构</h2>
+<p>微服务架构（microservices architecture）是服务导向架构（service-oriented architecture，缩写 SOA）的升级。</p>
+<p>每一个服务就是一个独立的部署单元（separately deployed unit）。这些单元都是分布式的，互相解耦，通过远程通信协议（比如REST、SOAP）联系。</p>
+<figure data-type="image" tabindex="6"><img src="http://www.ruanyifeng.com/blogimg/asset/2016/bg2016090307.png" alt="img" loading="lazy"></figure>
+<p>微服务架构分成三种实现模式。</p>
+<blockquote>
+<ul>
+<li>RESTful API 模式：服务通过 API 提供，云服务就属于这一类</li>
+<li>RESTful 应用模式：服务通过传统的网络协议或者应用协议提供，背后通常是一个多功能的应用程序，常见于企业内部</li>
+<li>集中消息模式：采用消息代理（message broker），可以实现消息队列、负载均衡、统一日志和异常处理，缺点是会出现单点失败，消息代理可能要做成集群</li>
+</ul>
+</blockquote>
+<p>优点</p>
+<blockquote>
+<ul>
+<li>扩展性好，各个服务之间低耦合</li>
+<li>容易部署，软件从单一可部署单元，被拆成了多个服务，每个服务都是可部署单元</li>
+<li>容易开发，每个组件都可以进行持续集成式的开发，可以做到实时部署，不间断地升级</li>
+<li>易于测试，可以单独测试每一个服务</li>
+</ul>
+</blockquote>
+<p>缺点</p>
+<blockquote>
+<ul>
+<li>由于强调互相独立和低耦合，服务可能会拆分得很细。这导致系统依赖大量的微服务，变得很凌乱和笨重，性能也会不佳。</li>
+<li>一旦服务之间需要通信（即一个服务要用到另一个服务），整个架构就会变得复杂。典型的例子就是一些通用的 Utility 类，一种解决方案是把它们拷贝到每一个服务中去，用冗余换取架构的简单性。</li>
+<li>分布式的本质使得这种架构很难实现原子性操作，交易回滚会比较困难。</li>
+</ul>
+</blockquote>
+<h2 id="五-云架构">五、云架构</h2>
+<p>云结构（cloud architecture）主要解决扩展性和并发的问题，是最容易扩展的架构。</p>
+<p>它的高扩展性，主要原因是没使用中央数据库，而是把数据都复制到内存中，变成可复制的内存数据单元。然后，业务处理能力封装成一个个处理单元（prcessing unit）。访问量增加，就新建处理单元；访问量减少，就关闭处理单元。由于没有中央数据库，所以扩展性的最大瓶颈消失了。由于每个处理单元的数据都在内存里，最好要进行数据持久化。</p>
+<p>这个模式主要分成两部分：处理单元（processing unit）和虚拟中间件（virtualized middleware）。</p>
+<blockquote>
+<ul>
+<li>处理单元：实现业务逻辑</li>
+<li>虚拟中间件：负责通信、保持sessions、数据复制、分布式处理、处理单元的部署。</li>
+</ul>
+</blockquote>
+<figure data-type="image" tabindex="7"><img src="http://www.ruanyifeng.com/blogimg/asset/2016/bg2016090311.png" alt="img" loading="lazy"></figure>
+<p>虚拟中间件又包含四个组件。</p>
+<blockquote>
+<ul>
+<li><strong>消息中间件</strong>（Messaging Grid）：管理用户请求和session，当一个请求进来以后，决定分配给哪一个处理单元。</li>
+<li><strong>数据中间件</strong>（Data Grid）：将数据复制到每一个处理单元，即数据同步。保证某个处理单元都得到同样的数据。</li>
+<li><strong>处理中间件</strong>（Processing Grid）：可选，如果一个请求涉及不同类型的处理单元，该中间件负责协调处理单元</li>
+<li><strong>部署中间件</strong>（Deployment Manager）：负责处理单元的启动和关闭，监控负载和响应时间，当负载增加，就新启动处理单元，负载减少，就关闭处理单元。</li>
+</ul>
+</blockquote>
+<p>优点</p>
+<blockquote>
+<ul>
+<li>高负载，高扩展性</li>
+<li>动态部署</li>
+</ul>
+</blockquote>
+<p>缺点</p>
+<blockquote>
+<ul>
+<li>实现复杂，成本较高</li>
+<li>主要适合网站类应用，不合适大量数据吞吐的大型数据库应用</li>
+<li>较难测试</li>
+</ul>
+</blockquote>
+<h2 id="六-开始我的表演">六、开始我的表演</h2>
+<p>​	毕业设计每天都构思如何搭建工程结构和编写代码规范，如：代码结构，代码规范，目录结构，服务结构，关系结构等，尤其是都知道后端的规范和结构是相当重要，因为它是数据源走向必经之路，也可以理解是水的管道，就按照这个水是数据源，开发者是管道师傅，这个列子继续来认知我的宏与微的设计，我先提出一个问题，水质量与管道的设计到底哪个更加重要，有扩展思维的小伙伴，可以自己先思考一下，还有我一开始说道的大的工程项目一个会拆解，那么什么时候才知道是不可在分的原子，，水肯定会有一个开始的地方，一般会叫做水源，水的方向是由管道决定的，其实就是在说管道的设计，往往这个时候也要引入一个概念就是接口，初学者可以理解为水源是在水库里存放，与管道拼接的桥梁是接口。水不一定是干净，反过来说数据也不是全部有用的，这个时候决定水质量是接口，那水最终走的目的地是要管道来进行控制的，如果想把这里设计好需要了解设计模式，上面说到的水，管道，接口都是实例的对象，它们本身的概念是抽象的，并不是用实例作为概念。就拿数据源在举一个例子，往往我们想到数据库，数据库通常是用表的结构进行数据的存储，学过数据结构的小伙伴也知道存储数据结构的形式有好多，如：树，表，图，集合，数据库的可视化界面只是更好那你浏览数据与理解，实现的结构是又自己所决定。下面是我的个人理解：视图会让你认为数据库中数据的关系是二维，不一定，有可能，也可以是三维的，说不定更可能可以是四维的，因为现在程序很多有了生命周期，代码版本控制，例如git,svn。四维的设计是个人的看法，具体是否能设计出来，现在无法验证，只是胡扯一下，但是我还是要强调的时现在编程的壮大，未来的IT是真无可限量，如果能设计四维的数据模型，个人认为人类的记忆说不定可以能够存放，但是四维数据源那又怎么进行展示？，现在还没有想到怎么胡扯。</p>
+<p>​	其实我个提出的&quot;宏与微的设计&quot;就是一个方向，微是方向的起点，宏是方向的终点，而微趋向宏的方式与走向就是“宏与的设计”，上面说道：“那么什么时候才知道是不可在分的原子”这个问题，就是当拆解到终点即可，也可以说宏的实现成功。</p>
+<p>​	你的认知是根据别人的认知而认知，还是你的认知是根据别人的认知而改变认知，这个是我要说的宏与微的设计。</p>
 
                                 </div>
                     </article>
@@ -135,32 +291,51 @@
                 <!-- right -->
                 <div id="sidebar" class="main-container-right">
                     
-                                <!-- id-card -->
-                                
-    <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(http://qiyunkong.github.io/images/avatar.png?v=1620694392833)">
-        </div>
-        <h1 class="id_card-title">
-            技术飞
-        </h1>
-        <h2 class="id_card-description">
-            IT，生活，笔记，开发，学习
-        </h2>
-        <!--  -->
-        <div class="id_card-sns">
-            <!-- github -->
-            
-                    <!-- twitter -->
-                    
-                            <!-- weibo -->
-                            
-                                    <!-- facebook -->
-                                    
+                        <!-- toc -->
+                        
+    <div class="toc-card i-card ">
+        <div class="toc-title i-card-title">目录</div>
+        <div class="toc-content">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E4%B8%80-%E5%88%86%E5%B1%82%E6%9E%B6%E6%9E%84">一、分层架构</a></li>
+<li><a href="#%E4%BA%8C-%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8%E6%9E%B6%E6%9E%84">二、事件驱动架构</a></li>
+<li><a href="#%E4%B8%89-%E5%BE%AE%E6%A0%B8%E6%9E%B6%E6%9E%84">三、微核架构</a></li>
+<li><a href="#%E5%9B%9B-%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84">四、微服务架构</a></li>
+<li><a href="#%E4%BA%94-%E4%BA%91%E6%9E%B6%E6%9E%84">五、云架构</a></li>
+<li><a href="#%E5%85%AD-%E5%BC%80%E5%A7%8B%E6%88%91%E7%9A%84%E8%A1%A8%E6%BC%94">六、开始我的表演</a></li>
+</ul>
+</li>
+</ul>
 
         </div>
+        <script>
+            function locateCatelogList() {
+                /*获取文章目录集合,可通过:header过滤器*/
+                var alis = $('.post-content :header');
+                /*获取侧边栏目录列表集合**/
+                var sidebar_alis = $('.markdownIt-TOC a');
+                /*获取滚动条到顶部的距离*/
+                var scroll_height = $(window).scrollTop();
+                for (var i = 0; i < alis.length; i++) {
+                    /*获取锚点集合中的元素分别到顶点的距离*/
+                    var a_height = $(alis[i]).offset().top;
+                    if (a_height < scroll_height) {
+                        /*高亮显示*/
+                        sidebar_alis.removeClass('on');
+                        $(sidebar_alis[i]).addClass('on');
+                    }
+                }
+            }
+            $(function() {
+                /*绑定滚动事件 */
+                $(window).bind('scroll', locateCatelogList);
+            });
+        </script>
     </div>
     
-                                    
+                            
 
                 </div>
 
